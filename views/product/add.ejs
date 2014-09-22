@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+<script src="/js/product/jquery.form.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="/js/product/add.js"></script>
+  </head>
+  <body>
+<div class="container">
+<h2 class="text-center">商品添加</h2>
+<form id="productForm" class="form-horizontal" role="form" method="post"  enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="txtProductName" class="col-sm-2 control-label">名称</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="txtProductName" name="productName" required  placeholder="请添加商品">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="txtIntroduction" class="col-sm-2 control-label">介绍</label>
+    <div class="col-sm-10">
+      <textarea class="form-control"  required rows="5" id="txtIntroduction" name="jieshao">
+</textarea>    
+</div>
+  </div>
+
+<div class="form-group">
+    <label for="txtPrice" class="col-sm-2 control-label">价格</label>
+    <div class="col-sm-10">
+      <input type="number" name="price" class="form-control" id="txtPrice" placeholder="请收入价格">
+    </div>
+  </div>
+<div class="form-group">
+    <label for="txtPicture" class="col-sm-2 control-label">图片</label>
+    <div class="col-sm-10">
+      <input name="file" id="file" type="file" class="form-control" />
+    </div>
+  </div>
+
+
+
+
+  
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button id="btnAddProduct" type="button" class="btn btn-default">添加</button>
+<a class="btn btn-default" href="/product/list" role="button">商品列表</a>
+    </div>
+  </div>
+</form>
+</div>
+
+  </body>
+</html>
